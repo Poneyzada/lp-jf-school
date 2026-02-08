@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     
-    <!-- ESPIÃO FATHERFLOW (Conecta ao seu servidor) -->
+    <!-- 1. ESPIÃO FATHERFLOW (Conecta ao seu servidor) -->
     <script src="rf.js"></script>
 
-    <!-- PIXEL META (Troque o XXXXX pelo ID da BM quando tiver) -->
+    <!-- 2. META PIXEL CODE (ID: 1336137111874532) -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -21,29 +21,13 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     
-    // FBQ INIT (Troque aqui)
-    fbq('init', '<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1336137111874532');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->'); 
+    fbq('init', '1336137111874532');
     fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=SEU_PIXEL_AQUI&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1"
     /></noscript>
+    <!-- End Meta Pixel Code -->
 
     <style>
         :root { --bg-color: #030303; --card-bg: #0f0f0f; --text-primary: #ffffff; --text-secondary: #888888; --urgent-red: #FF4D4D; --belt-glow: linear-gradient(90deg, #ffffff, #FFD700, #008000, #2e86de, #8e44ad, #000); }
@@ -84,7 +68,7 @@ src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1"
 <body>
     <div class="main-wrapper">
         <div class="logo-area">
-            <img src="logoJFschool.jfif" alt="JF School" class="logo-img">
+            <img src="logo.jpg" alt="JF School" class="logo-img">
             <h1>JF SCHOOL</h1>
             <p class="subtitle">Faça parte da nova era.</p>
         </div>
@@ -106,7 +90,6 @@ src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1"
                         <input type="text" id="nome" class="styled-input" placeholder="Seu nome" required>
                     </div>
                     
-                    <!-- CAMPO NOVO: WHATSAPP -->
                     <div class="input-group">
                         <label>WhatsApp</label>
                         <input type="tel" id="whatsapp" class="styled-input" placeholder="(21) 99999-9999" required>
@@ -161,9 +144,12 @@ src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1"
                 });
             }
 
-            // --- PIXEL FACEBOOK ---
+            // --- PIXEL FACEBOOK (DISPARO EVENTO LEAD) ---
             if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead', { content_name: interesse, user_data: { fn: nome, ph: whatsapp } });
+                fbq('track', 'Lead', { 
+                    content_name: interesse, 
+                    user_data: { fn: nome, ph: whatsapp } 
+                });
             }
 
             // REDIRECIONAMENTO
