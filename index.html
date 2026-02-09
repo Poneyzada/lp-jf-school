@@ -120,7 +120,7 @@
     </div>
 
     <script>
-        function irParaWhatsapp(e) {
+function irParaWhatsapp(e) {
             e.preventDefault(); 
             // NÚMERO DO SEU CLIENTE (JF SCHOOL)
             let seuNumero = "5521969464472"; 
@@ -129,12 +129,11 @@
             let whatsapp = document.getElementById('whatsapp').value;
             let interesse = document.getElementById('interesse').value;
             
-            // CAPTURA UTM
+            // CAPTURA UTM (Fica no escuro, vai só pro nosso banco)
             const urlParams = new URLSearchParams(window.location.search);
             const origem = urlParams.get('utm_source') || 'Direto/Orgânico';
 
-            // --- FATHERFLOW TRACKING ---
-            // Salva no banco mesmo se o Zap não abrir
+            // --- FATHERFLOW TRACKING (Inteligência Invisível) ---
             if (typeof trackLeadIndustrial === "function") {
                 trackLeadIndustrial({
                     nome: nome,
@@ -144,16 +143,14 @@
                 });
             }
 
-            // --- PIXEL FACEBOOK (DISPARO EVENTO LEAD) ---
+            // --- PIXEL FACEBOOK ---
             if (typeof fbq !== 'undefined') {
-                fbq('track', 'Lead', { 
-                    content_name: interesse, 
-                    user_data: { fn: nome, ph: whatsapp } 
-                });
+                fbq('track', 'Lead', { content_name: interesse, user_data: { fn: nome, ph: whatsapp } });
             }
 
-            // REDIRECIONAMENTO
-            let mensagem = `Olá! Me chamo *${nome}*.\nMeu Zap é: ${whatsapp}\nTenho interesse no plano *${interesse}*.\nQuero garantir minha ISENÇÃO DE MATRÍCULA.\n\n(Vim pelo: ${origem})`;
+            // --- MENSAGEM 100% HUMANA ---
+            let mensagem = `Olá! Me chamo *${nome}*.\n\nTenho interesse no plano *${interesse}* e quero garantir minha *ISENÇÃO DE MATRÍCULA* da 1ª turma!`;
+            
             let link = `https://wa.me/${seuNumero}?text=${encodeURIComponent(mensagem)}`;
             window.open(link, '_blank');
         }
