@@ -3,63 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JF School | Acesso Antecipado</title>
+    <title>JF School | Faça sua Matrícula</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
     <!-- 1. ESPIÃO FATHERFLOW -->
     <script src="rf.js"></script>
-
     <!-- 2. META PIXEL CODE (ID: 1336137111874532) -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1336137111874532');
-    fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1336137111874532');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1"/></noscript>
-
+            src="https://www.facebook.com/tr?id=1336137111874532&ev=PageView&noscript=1" /></noscript>
     <style>
-        :root { --bg-color: #030303; --card-bg: #0f0f0f; --text-primary: #ffffff; --text-secondary: #888888; --urgent-red: #FF4D4D; --belt-glow: linear-gradient(90deg, #ffffff, #FFD700, #008000, #2e86de, #8e44ad, #000); }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: var(--bg-color); color: var(--text-primary); font-family: 'Inter', sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #030303 70%); }
-        .main-wrapper { width: 100%; max-width: 480px; padding: 20px; z-index: 10; }
-        .logo-area { text-align: center; margin-bottom: 30px; }
-        .logo-img { width: 80px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 0 20px rgba(255,255,255,0.05); }
-        h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700; line-height: 1.1; margin-bottom: 10px; letter-spacing: -1px; }
-        .subtitle { color: var(--text-secondary); font-size: 1rem; }
-        .pro-card { position: relative; background: var(--card-bg); border-radius: 20px; padding: 3px; box-shadow: 0 20px 50px rgba(0,0,0,0.8); margin-top: 20px; }
-        .pro-card::before { content: ""; position: absolute; inset: 0; border-radius: 20px; padding: 2px; background: var(--belt-glow); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; opacity: 0.5; }
-        .card-content { background: var(--card-bg); border-radius: 18px; padding: 30px; position: relative; z-index: 2; }
-        .status-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(255, 77, 77, 0.1); color: #ff4d4d; padding: 5px 12px; border-radius: 100px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; margin-bottom: 15px; border: 1px solid rgba(255, 77, 77, 0.2); }
-        .status-dot { width: 6px; height: 6px; background-color: #ff4d4d; border-radius: 50%; animation: blink 1.5s infinite; }
-        .countdown-area { margin-bottom: 25px; }
-        .countdown-text { display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 600; color: #ccc; margin-bottom: 8px; }
-        .countdown-text span { color: var(--urgent-red); }
-        .progress-bg { width: 100%; height: 8px; background: #222; border-radius: 10px; overflow: hidden; }
-        .progress-fill { height: 100%; background: linear-gradient(90deg, #FF4D4D, #ff9f43); width: 88%; border-radius: 10px; animation: loadBar 1.5s ease-out; position: relative; }
-        .input-group { margin-bottom: 15px; }
-        label { display: block; font-size: 0.75rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
-        .styled-input { width: 100%; background: #1a1a1a; border: 1px solid #333; color: white; padding: 14px; border-radius: 8px; font-size: 1rem; transition: 0.3s; font-family: 'Inter', sans-serif; }
-        .styled-input:focus { outline: none; border-color: #666; background: #222; }
-        .cta-btn { width: 100%; margin-top: 10px; padding: 16px; background: white; color: black; border: none; border-radius: 8px; font-weight: 700; font-size: 1rem; cursor: pointer; transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; }
-        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 0 20px rgba(255,255,255,0.2); }
-        .mystery-box { margin-top: 25px; padding-top: 20px; border-top: 1px solid #222; text-align: center; }
-        .founder-perks-text h4 { color: #FFD700; font-size: 0.85rem; margin-bottom: 5px; text-transform: uppercase; }
-        .founder-perks-text p { font-size: 0.8rem; color: #aaa; }
-        .blurred-price { filter: blur(6px); user-select: none; opacity: 0.5; font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 5px; margin-top: 15px; }
-        .lock-text { font-size: 0.75rem; color: #666; display: flex; align-items: center; justify-content: center; gap: 5px; }
-        .founder-tag { position: absolute; top: -12px; right: 20px; background: linear-gradient(135deg, #FFD700, #FDB931); color: black; font-size: 0.7rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2); z-index: 10; }
-        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.4; } 100% { opacity: 1; } }
-        @keyframes loadBar { 0% { width: 0%; } 100% { width: 88%; } }
-        @media (max-width: 480px) { h1 { font-size: 2rem; } }
+        :root {
+            --bg-color: #030303;
+            --card-bg: #0f0f0f;
+            --text-primary: #ffffff;
+            --text-secondary: #888888;
+            --urgent-red: #FF4D4D;
+            --belt-glow: linear-gradient(90deg, #ffffff, #FFD700, #008000, #2e86de, #8e44ad, #000);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #030303 70%);
+        }
+        .main-wrapper {
+            width: 100%;
+            max-width: 480px;
+            padding: 20px;
+            z-index: 10;
+        }
+        .logo-area {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo-img {
+            width: 80px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+        .pro-card {
+            position: relative;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 3px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+            margin-top: 20px;
+        }
+        .pro-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background: var(--belt-glow);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.5;
+        }
+        .card-content {
+            background: var(--card-bg);
+            border-radius: 18px;
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(255, 77, 77, 0.1);
+            color: #ff4d4d;
+            padding: 5px 12px;
+            border-radius: 100px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 77, 77, 0.2);
+        }
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #ff4d4d;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .styled-input {
+            width: 100%;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: white;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: 0.3s;
+            font-family: 'Inter', sans-serif;
+        }
+        .styled-input:focus {
+            outline: none;
+            border-color: #666;
+            background: #222;
+        }
+        .cta-btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 16px;
+            background: white;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -69,18 +203,10 @@
             <h1>JF SCHOOL</h1>
             <p class="subtitle">Faça parte da nova era.</p>
         </div>
-
         <div class="pro-card">
-            <div class="founder-tag">🏆 1ª TURMA</div>
             <div class="card-content">
                 <div class="status-badge"><span class="status-dot"></span> Inscrições Abertas</div>
-                <h2 style="font-size: 1.25rem; margin-bottom: 15px; font-weight: 500;">Pré-inscrição Oficial</h2>
-                
-                <div class="countdown-area">
-                    <div class="countdown-text">Vagas Preenchidas <span>25 / 30</span></div>
-                    <div class="progress-bg"><div class="progress-fill"></div></div>
-                </div>
-
+                <h2 style="font-size: 1.25rem; margin-bottom: 20px; font-weight: 500;">Faça sua Matrícula</h2>
                 <form onsubmit="irParaWhatsapp(event)">
                     <div class="input-group">
                         <label>Nome Completo</label>
@@ -91,53 +217,64 @@
                         <input type="tel" id="whatsapp" class="styled-input" placeholder="(21) 99999-9999" required>
                     </div>
                     <div class="input-group">
-                        <label>Objetivo</label>
+                        <label>Escolha sua Turma</label>
                         <select id="interesse" class="styled-input">
-                            <option value="Adulto Iniciante">Adulto (Defesa & Performance)</option>
-                            <option value="Kids">Kids (Disciplina & Futuro)</option>
-                            <option value="Competição">Competição</option>
+                            <option value="Adulto">Adulto — Jiu-Jitsu</option>
+                            <option value="Baby Kids">Baby Kids — 3 a 7 anos</option>
+                            <option value="Infantil">Infantil — 8 a 12 anos</option>
+                            <option value="Juvenil">Juvenil — 13 a 17 anos</option>
+                            <option value="Boxe/Muay Thai">Boxe / Muay Thai</option>
+                            <option value="Competição">Competição — Alta Performance</option>
                         </select>
                     </div>
                     <button type="submit" class="cta-btn">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg> GARANTIR ISENÇÃO
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                        </svg> FAZER MINHA MATRÍCULA
                     </button>
                 </form>
-
-                <div class="mystery-box">
-                    <div class="founder-perks-text"><h4>Aluno Fundador (30 Primeiros)</h4><p>Fundadores ganham <strong>ISENÇÃO TOTAL DA MATRÍCULA</strong>.<br>Você paga apenas a 1ª mensalidade.</p></div>
-                    <div class="blurred-price">R$ 000,00</div>
-                    <div class="lock-text">🔒 Valores liberados no WhatsApp</div>
-                </div>
             </div>
         </div>
-        <p style="text-align: center; color: #333; font-size: 0.7rem; margin-top: 30px;">© 2026 JF School Team. All rights reserved.</p>
+        <p style="text-align: center; color: #333; font-size: 0.7rem; margin-top: 30px;">© 2026 JF School Team. All
+            rights reserved.</p>
     </div>
-
     <script>
+        const mensagensPorTurma = {
+            "Adulto": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Adulto* (Defesa Pessoal & Performance) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`,
+            "Kids 1": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Kids 1* (4 a 7 anos) para o meu filho(a) e gostaria de mais informações sobre a matrícula na JF School! 🥋`,
+            "Kids 2": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Kids 2* (8 a 12 anos) para o meu filho(a) e gostaria de mais informações sobre a matrícula na JF School! 🥋`,
+            "Juvenil": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Juvenil* (13 a 17 anos) e gostaria de mais informações para fazer a matrícula na JF School! 🥋`,
+            "Competição": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Competição* (Alta Performance) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`
+            "Adulto":         `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Adulto* de Jiu-Jitsu e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`,
+            "Baby Kids":      `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Baby Kids* (3 a 7 anos) para o meu filho(a) e gostaria de mais informações sobre a matrícula na JF School! 🥋`,
+            "Infantil":       `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Infantil* (8 a 12 anos) para o meu filho(a) e gostaria de mais informações sobre a matrícula na JF School! 🥋`,
+            "Juvenil":        `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Juvenil* (13 a 17 anos) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`,
+            "Boxe/Muay Thai": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Boxe / Muay Thai* e gostaria de mais informações para fazer minha matrícula na JF School! 🥊`,
+            "Competição":     `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Competição* (Alta Performance) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`
+        };
         function irParaWhatsapp(e) {
             e.preventDefault();
             let seuNumero = "5521969464472";
             let nome = document.getElementById('nome').value;
             let whatsapp = document.getElementById('whatsapp').value;
             let interesse = document.getElementById('interesse').value;
-
             // FATHERFLOW TRACKING
             if (typeof trackLeadIndustrial === "function") {
                 trackLeadIndustrial({
-                    nome:     nome,
-                    whats:    whatsapp,
-                    mensagem: `Interesse: ${interesse}`,
-                    tipo:     interesse
+                    nome: nome,
+                    whats: whatsapp,
+                    mensagem: `Turma: ${interesse}`,
+                    tipo: interesse
                 });
             }
-
             // PIXEL FACEBOOK
             if (typeof fbq !== 'undefined') {
                 fbq('track', 'Lead', { content_name: interesse, user_data: { fn: nome, ph: whatsapp } });
             }
-
-            // MENSAGEM WHATSAPP
-            let mensagem = `Olá! Me chamo *${nome}*.\n\nTenho interesse no plano *${interesse}* e quero garantir minha *ISENÇÃO DE MATRÍCULA* da 1ª turma!`;
+            // MENSAGEM WHATSAPP personalizada por turma
+            let template = mensagensPorTurma[interesse] || `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *${interesse}* e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`;
+            let mensagem = template.replace('{nome}', nome);
             window.open(`https://wa.me/${seuNumero}?text=${encodeURIComponent(mensagem)}`, '_blank');
         }
     </script>
