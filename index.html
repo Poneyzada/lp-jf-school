@@ -219,16 +219,11 @@
                     <div class="input-group">
                         <label>Escolha sua Turma</label>
                         <select id="interesse" class="styled-input">
-                            <option value="Adulto">Adulto — Jiu-Jitsu</option>
-                            <option value="Baby Kids">Baby Kids — 3 a 7 anos</option>
-                            <option value="Infantil">Infantil — 8 a 12 anos</option>
-                            <option value="Juvenil">Juvenil — 13 a 17 anos</option>
                             <option value="Adulto">Adulto</option>
                             <option value="Baby Kids">Baby Kids (3 a 7 anos)</option>
                             <option value="Infantil">Infantil (8 a 12 anos)</option>
                             <option value="Juvenil">Juvenil (13 a 16 anos)</option>
                             <option value="Boxe/Muay Thai">Boxe / Muay Thai</option>
-                            <option value="Competição">Competição — Alta Performance</option>
                             <option value="Competição">Competição</option>
                         </select>
                     </div>
@@ -249,7 +244,7 @@
             "Adulto": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Adulto* de Jiu-Jitsu e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`,
             "Baby Kids": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Baby Kids* (3 a 7 anos) para o meu filho(a) e gostaria de mais informações sobre a matrícula na JF School! 🥋`,
             "Infantil": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Infantil* (8 a 12 anos) para o meu filho(a) e gostaria de mais informações sobre a matrícula na JF School! 🥋`,
-            "Juvenil": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Juvenil* (13 a 17 anos) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`,
+            "Juvenil": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *Juvenil* (13 a 16 anos) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`,
             "Boxe/Muay Thai": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Boxe / Muay Thai* e gostaria de mais informações para fazer minha matrícula na JF School! 🥊`,
             "Competição": `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma de *Competição* (Alta Performance) e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`
         };
@@ -275,7 +270,6 @@
             // MENSAGEM WHATSAPP personalizada por turma
             let template = mensagensPorTurma[interesse] || `Olá! Me chamo *{nome}*.\n\nTenho interesse na turma *${interesse}* e gostaria de mais informações para fazer minha matrícula na JF School! 🥋`;
             let mensagem = template.replace('{nome}', nome);
-            window.open(`https://wa.me/${seuNumero}?text=${encodeURIComponent(mensagem)}`, '_blank');
             window.location.href = `https://wa.me/${seuNumero}?text=${encodeURIComponent(mensagem)}`;
         }
     </script>
